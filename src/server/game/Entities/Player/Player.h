@@ -2822,9 +2822,6 @@ protected:
     ItemDurationList m_itemSoulboundTradeable;
     ACE_Thread_Mutex m_soulboundTradableLock;
 
-    void ResetTimeSync();
-    void SendTimeSync();
-
     uint64 m_resurrectGUID;
     uint32 m_resurrectMap;
     float m_resurrectX, m_resurrectY, m_resurrectZ;
@@ -2964,11 +2961,6 @@ private:
     SpellCooldowns m_spellCooldowns;
 
     uint32 m_ChampioningFaction;
-
-    uint32 m_timeSyncCounter;
-    uint32 m_timeSyncTimer;
-    uint32 m_timeSyncClient;
-    uint32 m_timeSyncServer;
 
     InstanceTimeMap _instanceResetTimes;
     uint32 _pendingBindId;
